@@ -25,7 +25,6 @@ groups:
   Builder:
     default: false
     permissions:
-    -
     inheritance:
     - default
     - g:essentials_builder
@@ -36,7 +35,11 @@ groups:
       suffix: ''
   Moderator:
     default: false
-    permissions: []
+    permissions:
+    -essentials.bigtree
+    -essentials.break
+    -essentials.fly
+    -essentials.fly.safelogin
     inheritance:
     - builder
     - g:groupmanager_moderator
@@ -50,7 +53,23 @@ groups:
       suffix: ''
   Admin:
     default: false
-    permissions: []
+    permissions:
+    -essentials.break.bedrock
+    -essentials.enchant
+    -essentials.enchantments.allowunsafe
+    -essentials.exp
+    -essentials.exp.give
+    -essentials.exp.give.others
+    -essentials.exp.others
+    -essentials.exp.set
+    -essentials.exp.set.others
+    -essentails.feed
+    -essentials.feed.cooldown.bypass
+    -essentials.others
+    -essentials.firework
+    -essentials.fly.others
+    -essentials.gamemode
+    -essentials..gamemode.others
     inheritance:
     - moderator
     - g:groupmanager_admin
