@@ -33,6 +33,18 @@ groups:
       prefix: '&2'
       build: true
       suffix: ''
+  Trusted:
+    default: false
+    permissions:
+    -essentials.hat
+    inheritance:
+    - builder
+    - g:essentials_builder
+    - g:towny_builder
+    info:
+      prefix: '&2'
+      build: true
+      suffix: ''
   Moderator:
     default: false
     permissions:
@@ -40,8 +52,13 @@ groups:
     -essentials.break
     -essentials.fly
     -essentials.fly.safelogin
+    -essentials.itemspawn.exempt
+    -essentials.heal
+    -essentials.heal.cooldown.bypass
+    -essentials.others
+    -essentials.itemspawn
     inheritance:
-    - builder
+    - trusted
     - g:groupmanager_moderator
     - g:bukkit_moderator
     - g:essentials_moderator
@@ -69,7 +86,8 @@ groups:
     -essentials.firework
     -essentials.fly.others
     -essentials.gamemode
-    -essentials..gamemode.others
+    -essentials.gamemode.others
+    -essentials.give
     inheritance:
     - moderator
     - g:groupmanager_admin
