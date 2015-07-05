@@ -25,6 +25,13 @@ groups:
   Builder:
     default: false
     permissions:
+    -essentials.kit
+    -essentials.back
+    -essentials.delhome
+    -essentials.home
+    -essentials.home.bed
+    -essentials.sethome
+    -essentials.sethome.bed
     inheritance:
     - default
     - g:essentials_builder
@@ -37,6 +44,9 @@ groups:
     default: false
     permissions:
     -essentials.hat
+    -essentials.back.ondeath
+    -essentials.home.others
+    -essentials.sethome.multiple
     inheritance:
     - builder
     - g:essentials_builder
@@ -57,6 +67,7 @@ groups:
     -essentials.heal.cooldown.bypass
     -essentials.others
     -essentials.itemspawn
+    -essentials.nuke
     inheritance:
     - trusted
     - g:groupmanager_moderator
@@ -88,6 +99,9 @@ groups:
     -essentials.gamemode
     -essentials.gamemode.others
     -essentials.give
+    -essentials.kit.exemtdelay
+    -essentials.kit.others
+    -essentials.kits.*
     inheritance:
     - moderator
     - g:groupmanager_admin
