@@ -55,7 +55,7 @@ groups:
       prefix: '&2'
       build: true
       suffix: ''
-  Moderator:
+  Mod:
     default: false
     permissions:
     -essentials.bigtree
@@ -103,7 +103,7 @@ groups:
     -essentials.kit.others
     -essentials.kits.*
     inheritance:
-    - moderator
+    - mod
     - g:groupmanager_admin
     - g:bukkit_admin
     - g:essentials_admin
